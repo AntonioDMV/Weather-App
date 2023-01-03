@@ -54,9 +54,9 @@ function App() {
         <h2>Weather App</h2>
         <h4>{weather.name} {weather.sys?.country}</h4>
         <div className='weather'>
-          <div className='tempdiv'>
+          <div className='temperaturediv'>
             <img src={`http://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`} alt="" />
-            <li className='temp'> <b>Temp</b> {isFahrenheit ? tempFarenheit : tempCelsius} {' '} {isFahrenheit ? '°F' : '°C'} </li>
+            <li className='temperature'> <b>Temperature:</b> {isFahrenheit ? tempFarenheit : tempCelsius} {' '} {isFahrenheit ? '°F' : '°C'} </li>
           </div>
           <div className='pronosticdiv'>
             <ul>
